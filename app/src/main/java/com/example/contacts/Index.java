@@ -43,7 +43,7 @@ public class Index extends AppCompatActivity {
     static String MEMAIL = "EMAIL";
     static String MPHONE = "PHONE";
     static String MADDR = "ADDR";
-    static String MPHOT = "PHOTO";
+    static String MPHOTO = "PHOTO";
 
     static abstract class QueryFactory{
         Context _this;
@@ -72,7 +72,7 @@ public class Index extends AppCompatActivity {
                             "%s TEXT," +
                             "%s TEXT," +
                             "%s TEXT" +
-                            ")",MEMBERS,MSEQ,MNAME,MPW,MEMAIL,MPHONE,MADDR,MPHOT
+                            ")",MEMBERS,MSEQ,MNAME,MPW,MEMAIL,MPHONE,MADDR,MPHOTO
             );
             Log.d("실행할 쿼리 ::",sql);
             db.execSQL(sql);
@@ -95,7 +95,7 @@ public class Index extends AppCompatActivity {
                                 "'%s',"+
                                 "'%s',"+
                                 "'%s',"+
-                                "'%s')",MEMBERS,MNAME,MPW,MEMAIL,MPHONE,MADDR,MPHOT,
+                                "'%s')",MEMBERS,MNAME,MPW,MEMAIL,MPHONE,MADDR,MPHOTO,
                         names[i],
                         "1",
                         emails[i]+"@test.com",
